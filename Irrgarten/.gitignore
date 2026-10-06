@@ -1,0 +1,15 @@
+# Binarios y carpetas de compilación
+*.class
+*.jar
+/build/
+/dist/
+
+# Archivos locales de NetBeans
+/nbproject/private/
+.netbeans_automatic_build
+.netbeans_update_resources
+build.xml
+
+# Archivos ocultos del sistema operativo
+.DS_Store
+Thumbs.db
