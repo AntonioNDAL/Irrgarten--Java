@@ -5,7 +5,7 @@ import ui.TextUI;      // (Opcional) Por si quieres volver a probar texto
 import control.Controller;
 import irrgarten.Game;
 
-public class TestP3{
+public class IrrgartenApp{
     public static void main(String[] args){
         int n_players = 1; // Puedes probar con más si quieres
         
