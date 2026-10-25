@@ -199,6 +199,9 @@ public String toString() {
             if(this.monsterPos(row,col)){
                 this.labyrinth[row][col] = COMBAT_CHAR;
                 output = this.monsters[row][col];
+            } else {
+                char number = player.getNumber();
+                this.labyrinth[row][col] = number;
             }
             
             this.players[row][col] = player;
