@@ -173,4 +173,8 @@ public class Player extends LabyrinthCharacter{
     private void incConsecutiveHits(){
         this.consecutiveHits += 1;
     }
+
+    public char getNumber() {
+        return this.number;
+    }
 }
