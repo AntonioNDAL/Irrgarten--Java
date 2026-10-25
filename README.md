@@ -21,4 +21,21 @@ This project was developed as part of the Object-Oriented Programming and Design
 
 * **Language:** Java SE
 * **GUI:** Java Swing (`JFrame`, `JDialog` for modal inputs)
-* **Setup:** Open the project in NetBeans (or your preferred Java IDE), compile the source code, and execute the main entry point to launch the graphical interface.
+* **Build Tool:** Maven
+
+**Setup & Execution:**
+Since this project uses Maven, you can easily compile and run it from your terminal without needing a specific IDE:
+
+1. Clone the repository:
+   
+   git clone [https://github.com/your-username/irrgarten-java.git](https://github.com/your-username/irrgarten-java.git)
+   
+   cd irrgarten-java
+
+3. Build the executable JAR using Maven:
+   
+   mvn clean package
+
+4. Run the game:
+
+   java -jar target/irrgarten-game-1.0.0.jar
