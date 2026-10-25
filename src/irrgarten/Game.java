@@ -163,12 +163,15 @@ public class Game {
         if(resurrect){
             this.currentPlayer.resurrect();
             this.logResurrected();
-        }else{
+            
             if(!(currentPlayer instanceof FuzzyPlayer)){
                 FuzzyPlayer fuzzy = new FuzzyPlayer(currentPlayer);
                 players.set(numCurrentPlayer, fuzzy);
                 currentPlayer = fuzzy;
+                
+                this.labyrinth.replacePlayer(fuzzy); 
             }
+        }else{
             this.logPlayerSkipTurn();
         }
     }
