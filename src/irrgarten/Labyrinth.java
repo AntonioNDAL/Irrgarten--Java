@@ -207,4 +207,12 @@ public String toString() {
         
         return output;
     }
+
+    public void replacePlayer(Player newPlayer) {
+        int r = newPlayer.getRow();
+        int c = newPlayer.getCol();
+        if (this.posOk(r, c)) {
+            this.players[r][c] = newPlayer;
+        }
+    }
 }
